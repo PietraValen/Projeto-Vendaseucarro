@@ -1,11 +1,10 @@
-/* Genral Styles */
-
-*,
-*::before,
-*::after {
+/* Reset page */
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-/**/
+/* body background */
+body{
+  background: hsl(273, 100%, 86%);
+}
