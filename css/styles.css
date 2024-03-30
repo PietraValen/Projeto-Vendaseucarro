@@ -1,10 +1,92 @@
-/* Reset page */
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-/* body background */
-body{
-  background: hsl(273, 100%, 86%);
+
+header {
+    background-color: hsl(278, 82%, 59%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.section_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-title-container {
+    color: hsl(278, 82%, 59%);
+}
+
+.h1-title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alternative-form {
+    margin-bottom: 20px;
+}
+
+.alternative-form legend {
+    font-weight: bold;
+}
+
+.alternative-form input[type="text"],
+.alternative-form textarea,
+.alternative-form input[type="date"],
+.alternative-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não altere a largura do elemento */
+}
+
+.selector-form-type-exchange,
+.selector-form-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.selector-form-type-exchange .radio,
+.selector-form-options .radio {
+    flex: 0 0 calc(50% - 10px); /* Divide em duas colunas com espaço entre elas */
+}
+
+.button-shipping {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(278, 82%, 59%);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .selector-form-type-exchange .radio,
+    .selector-form-options .radio {
+        flex: 0 0 100%; /* Para telas menores, uma coluna */
+    }
 }
